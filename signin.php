@@ -8,9 +8,9 @@
     <?php
     function login() {
         $servername = "localhost";
-        $username = "id18924381_root";
-        $password = "GSkN|x55\Jrh+]48";
-        $database = "id18924381_main";
+        $username = "id18929520_root";
+        $password = "16t<yNrzWBHlX+ob";
+        $database = "id18929520_main";
 
         $conn = new mysqli($servername, $username, $password, $database);
 
