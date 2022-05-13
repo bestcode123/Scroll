@@ -25,7 +25,8 @@
         // 2 - Analysis ? idk lol:
         if(TRUE) {
             while($row = $result->fetch_assoc()) {
-                echo "Post " . $row['postid'] . ", title " . $row['title'] . ", body " . $row['body'] . ", by " . $row['alias'] . " (alias)!";
+                echo "Post " . $row['postid'] . ", title " . $row['title'] 
+. ", body " . $row['body'] . ", by " . $row['alias'] . " (alias)!<br />";
             }
         }
 

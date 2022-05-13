@@ -33,7 +33,8 @@
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
-              if($row['username'] === $_POST['username'] && $row['password'] === $_POST['password']) {
+              if($row['username'] === $_POST['username'] && 
+$row['password'] === $_POST['password']) {
                   $in = TRUE;
                   $usrn = $row['username'];
                   $psw = $row['password'];
@@ -59,12 +60,14 @@
     <div class="login_panel">
         <form name="loginform" action="" method="post">
             <input type="text" placeholder="username" name="username" />
-            <input type="password" placeholder="password" name="password" />
+            <input type="password" placeholder="password" name="password" 
+/>
             <input type="submit" name="submit" />
         </form>
     </div>
     <a href="signin.php">Sign Up</a>
     <a href="post.php">Post</a>
-    <p>Note: if you are wanting to use the post function, you will have to login first</p>
+    <p>Note: if you are wanting to use the post function, you will have to 
+login first</p>
 </body>
 </html>
