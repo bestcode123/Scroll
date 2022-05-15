@@ -19,7 +19,7 @@
             die("Connection failed: " . $conn->connect_error);
         }
 
-        /*
+        
         // Login Credential Retreival:
         $login_sql = "SELECT uid, username, password FROM userinfo";
         $result = $conn->query($login_sql);
@@ -42,14 +42,16 @@ $row['password'] === $_POST['password']) {
             }
           } else {
             echo "There is not an account linked to this username";
-        } */
+        } 
         
         $sql = "INSERT INTO posts (title, body, alias) VALUES (\"" . 
 $_POST['post_title'] . "\", \"" . $_POST['post_body'] . "\", \"" . 
 $_POST['post_alias'] . "\");";
 
-        if($conn->query($sql) === FALSE) {
-            die($conn->error);
+        if($in) {
+            if($conn->query($sql) === FALSE) {
+                die($conn->error);
+            }
         }
         $conn->close();
     }
