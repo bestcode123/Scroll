@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="post_style.css">
     <title>Document</title>
 </head>
-<body>
-    <a href="feed.php">Feed</a>
+<body><div class="all">
+    <a href="feed.php" class="feed_icon">Feed</a><br /><br />
     <?php
     if(isset($_POST['submit'])) {
         $servername = "localhost";
@@ -58,16 +59,16 @@ $_POST['post_alias'] . "\");";
     ?>
     <div class="enter_info">
         <form name="post_form" action="" method="post">
-            Username: <input type="text" name="username" />
+            Username: <input type="text" name="username" />&nbsp;&nbsp;&nbsp;&nbsp;
             Password: <input type="password" name="password" />
             <br /><hr />
-            Post Data: 
-            Title: <input type="text" name="post_title" />
-            Body: <input type="text" name="post_body" />
-            Alias: <input type="text" name="post_alias" />
-            <input type="submit" name="submit" />
+            Post:<br /><br />
+            Title: <input type="text" name="post_title" />&nbsp;&nbsp;&nbsp;&nbsp;
+            Body: <input type="text" name="post_body" />&nbsp;&nbsp;&nbsp;&nbsp;
+            Alias: <input type="text" name="post_alias" /><br /><br />
+            <input type="submit" name="submit" class="submit_button"/>
         </form>
     </div>
 
-</body>
+<div/></body>
 </html>
