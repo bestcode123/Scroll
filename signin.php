@@ -40,7 +40,7 @@ $_POST['username'] . "\", \"" . $_POST['password'] . "\");";
 />
             <input type="submit" name="submit" />
         </form><br />
-        <a href="login.php">Login</a>
+        <a href="post.php">Post</a>
     </div>
 
 </body>

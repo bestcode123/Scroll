@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="post_style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body><div class="all">
-    <a href="feed.php" class="feed_icon">Feed</a><br /><br />
+    <a href="feed.php" class="feed_icon">Feed</a><br /><br /><br />
+    <a href="signin.php" class="feed_icon">Sign&nbsp;Up</a><br /><br />
     <?php
     if(isset($_POST['submit'])) {
         $servername = "localhost";
@@ -70,5 +71,5 @@ $_POST['post_alias'] . "\");";
         </form>
     </div>
 
-<div/></body>
+</div></body>
 </html>

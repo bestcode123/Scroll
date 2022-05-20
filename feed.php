@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="feed_style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body><div class="all">
     <?php
         // Simple Feed Implementation:
         $servername = "localhost";
@@ -26,19 +26,19 @@
         // 2 - Analysis ? idk lol:
         if(TRUE) {
             while($row = $result->fetch_assoc()) {
-                echo "<div class=\"postdiv\">Post " 
+                echo "<span class=\"postspan\">Post <span class=\"post_id\">" 
                 . $row['postid'] 
-                . ", title " 
+                . "</span>, title <span class=\"post_title\">" 
                 . $row['title'] 
-                . ", body " 
+                . "</span>, body <span class=\"post_body\">" 
                 . $row['body'] 
-                . ", by " 
+                . "</span>, by <span class=\"post_alias\">" 
                 . $row['alias'] 
-                . " (alias)!</div><br />";
+                . "</span> (alias)!</span><br /><br /><br />";
             }
         }
 
         $conn->close();
     ?>
-</body>
+</div></body>
 </html>

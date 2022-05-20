@@ -36,4 +36,11 @@ input[type=text][input=passwoord] {
 
 .all {
     padding-top: 30px;
+    text-align: center;
+}
+
+.postspan {
+    text-align: center;
+    padding: 5px;
+    border: 5px solid green;
 }
